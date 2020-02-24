@@ -1,9 +1,11 @@
 const express = require('express')
 
 const app = express();
-
+var count = 0;
 app.get('/', (req, res) => {
-    res.send('Hi There!, this image is pulled from docker hub');
+    count++;
+    res.send('Hi There!')
+    res.send('Number of visits = ' + count);
 });
 
 app.listen(8080, ()=> {
