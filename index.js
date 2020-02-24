@@ -4,8 +4,8 @@ const app = express();
 var count = 0;
 app.get('/', (req, res) => {
     count++;
-    res.send('Hi, There!')
-    res.send('Number of visits = ' + count);
+    
+    res.send('Hi There \n Number of visits = ' + count);
 });
 
 app.listen(8080, ()=> {
